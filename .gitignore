@@ -1,0 +1,30 @@
+
+## LaTeX ##
+
+*.bbl
+*.blg
+*.log
+*.gz
+*.bak
+*.html
+*.aux
+*.ilg
+*.ind
+*.out
+*.fdb_latexmk
+*.fls
+
+resume-zh.tex
+
+## Editors ##
+
+.idea/
+.vs/
+.vscode/
+
+## Emacs/Vim ##
+
+*~
+
+## macOS ##
+.DS_Store

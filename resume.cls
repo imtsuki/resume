@@ -77,6 +77,9 @@
 % defines one's phone
 % usage: \phone{<phone>}
 \newcommand{\phone}[1]{\faPhone\ {#1}}
+% defines one's Wechat
+% usage: \wechat{<wechat>}
+\newcommand{\wechat}[1]{\faWechat\ {#1}}
 % defines one's linkedin
 % usage: \linkedin{<linkedin>}
 \newcommand{\linkedin}[2][]{\faLinkedin\ 

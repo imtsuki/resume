@@ -20,35 +20,55 @@
 \en{\datedsubsection{\textbf{Beijing University of Posts and Telecommunications}, Undergraduate}{09/2017 -- Present}}
 \zh{\datedsubsection{\textbf{北京邮电大学}, 在读本科}{2017/09 -- 至今}}
 \begin{itemize}
-      \item \en{Major: Data Science and Big Data Technology, Ranked 1 out of 63, Anticipated Graduation Date: 06/2021}
-            \zh{数据科学与大数据技术（计算机学院实验班）, 排名 1/63, 2021 年毕业}
-      \item GPA: 90.47/100
+      \item \en{Major: Data Science and Big Data Technology, \textit{The Honors Class, School of Computer Science}}
+            \zh{数据科学与大数据技术（计算机学院实验班），2021 年毕业}
+      \item \en{GPA: 90.69/100 (Ranked 1 out of 63), Key Courses: OS (91), Compiler (95), Network (96), Database (92)}
+            \zh{GPA: 90.69/100（排名 1/63）, 主修课程：操作系统 (91)、编译原理 (95)、计算机网络 (96)、数据库系统原理 (92)}
+      \item GRE: 328 (V: 158, Q: 170, AW: 3.5)
 \end{itemize}
 
 \section{\en{Work Experience}\zh{工作经历}}
+\en{\datedsubsection{\textbf{\href{https://www.alibabacloud.com/}{Alibaba Cloud}}, Hangzhou, China}{07/2020 -- Present}}
+\zh{\datedsubsection{\textbf{\href{https://www.aliyun.com/}{阿里云计算有限公司（Alibaba Cloud）}}}{2020/07 -- 至今}}
+\en{\role{OLAP Database Team}{Software Engineer Intern}}
+\zh{\role{OLAP 产品部}{开发实习}}
+\begin{itemize}
+      \item \en{Developed Flink connector for ClickHouse, using optimizations like parallel direct shard writing, that outperforms the default JDBC connector by 100\% in most common scenarios.}
+            \zh{为 ClickHouse 开发了 Flink connector，应用了直写 local 表等优化，在大部分场景下相较默认 JDBC connector 提升写入性能约 100\%。}
+\end{itemize}
+
 \en{\datedsubsection{\textbf{\href{https://www.smartx.com/global/}{SmartX Inc.}}, Beijing, China}{09/2019 -- 01/2020}}
 \zh{\datedsubsection{\textbf{\href{https://www.smartx.com/}{北京志凌海纳科技有限公司（SmartX Inc.）}}}{2019/09 -- 2020/01}}
 \en{\role{Distributed Storage Systems}{Software Engineer Intern, C++}}
 \zh{\role{分布式存储系统(ZBS)}{C++开发实习}}
 \begin{itemize}
-      \item \en{Improved the long task execution module, including backup storage parallelization, QoS and task status management.}
-            \zh{改进了 ZBS 的长任务执行模块（Task Center），如支持备份存储过程批并行化、QoS 限速及任务的状态控制等}
+      \item \en{Improved the long task execution module, like backup storage parallelization, QoS and task status management.}
+            \zh{改进了 ZBS 的长任务执行模块（Task Center），如支持备份存储过程批并行化、QoS 限速及任务的状态控制等。}
       \item \en{Implemented Hadoop-like command line tools for the NFS interface of the storage service.}
-            \zh{为存储服务的 NFS 接口实现了一整套类似于 Hadoop HDFS 的命令行工具}
+            \zh{为存储服务的 NFS 接口实现了一整套类似于 Hadoop HDFS 的命令行工具。}
       \item \en{Investigated and tuned the performance of MySQL running on ZBS at kernel level.}
-            \zh{在内核层面调查并调优了 MySQL 运行在 ZBS 上的一些性能问题}
-      \item \en{Learned a lot about distributed systems and storage.}
-            \zh{学到了很多分布式和系统存储相关的知识}
+            \zh{在内核层面调查并调优了 MySQL 运行在 ZBS 上的一些性能问题。}
 \end{itemize}
 
-\section{\en{Research Experience}\zh{研究经历}}
-\en{\datedsubsection{\textbf{Network and Big Data Technology R\&D Center}, Tsinghua University}{02/2020 -- Present}}
-\zh{\datedsubsection{\textbf{清华大学网络大数据技术研究中心}}{2020/02 -- 至今}}
+\section{\en{Research \& Academic Experience}\zh{研究经历}}
+\en{\datedsubsection{\textbf{Network and Big Data Technology R\&D Center}, Tsinghua University}{02/2020 -- 07/2020}}
+\zh{\datedsubsection{\textbf{清华大学网络大数据技术研究中心}}{2020/02 -- 2020/07}}
 \en{\role{RISC-V TEE}{Research Intern}}
 \zh{\role{RISC-V 可信执行环境}{科研实习}}
 \begin{itemize}
       \item \en{Implemented committed instruction flow collection based on RocketChip running on FireSim.}
-            \zh{实现了 FireSim 上基于 RocketChip 的指令流收集}
+            \zh{实现了 FireSim 上基于 RocketChip 的指令流收集。}
+      \item \en{Analyzed memory allocation patterns of Tensorflow and Tensorflow Lite.}
+            \zh{分析了 Tensorflow 与 Tensorflow Lite 框架内存分配的特征。}
+\end{itemize}
+
+\en{\datedsubsection{\textbf{Cambridge Academic Development Seminar}, U.K.}{07/2018 -- 08/2018}}
+\zh{\datedsubsection{\textbf{英国剑桥大学人工智能暑期交流项目}}{2018/07 -- 2018/08}}
+\en{\role{Machine Learning}{Summer Exchange Program}}
+\zh{\role{学生}{暑期交流}}
+\begin{itemize}
+      \item \en{Collaborated with others researching in machine learning applications and concerns.}
+            \zh{在小组中担任领导角色，研究机器学习应用问题，负责了小组展示的选题与组织。}
 \end{itemize}
 
 \section{\en{Portfolios}\zh{个人项目}}
@@ -56,34 +76,24 @@
 \en{Operating System implemented in Rust}
 \zh{使用 Rust 编写的操作系统}
 \begin{itemize}
-      \item \en{``xv7'' means it's inspired by MIT6.828 and xv6.}
-            \zh{项目目标为使用 Rust 重新实现 MIT6.828 和 xv6}
-      \item \en{Implemented UEFI Bootloader, interrupt management and memory management.}
-            \zh{实现了 UEFI Bootloader 、中断处理与内存管理}
+      \item \en{Implemented UEFI Bootloader, memory management and process management.}
+            \zh{实现了 UEFI Bootloader 、内存管理与进程管理。}
       \item \en{Achieved memory safety in kernel with the help of Rust's safe abstractions and lifetimes.}
-            \zh{借助 Rust 的抽象能力与生命周期概念实现内核中的内存安全}
+            \zh{借助 Rust 的抽象能力与生命周期概念实现内核中的内存安全。}
       \item \en{Made contributions to \texttt{\href{https://github.com/rust-osdev}{rust-osdev}}, an organization aiming at providing tools useful for OS development in Rust.}
-            \zh{为 Rust 操作系统开源组织 \texttt{\href{https://github.com/rust-osdev}{rust-osdev}} 贡献代码}
+            \zh{为 Rust 操作系统开源组织 \texttt{\href{https://github.com/rust-osdev}{rust-osdev}} 贡献代码。}
 \end{itemize}
 
-\en{\datedsubsection{\textbf{Raft Algorithm}}{08/2019}}
-\zh{\datedsubsection{\textbf{分布式系统一致性算法 Raft}}{2019/08}}
-MIT 6.824 Labs
+\datedsubsection{\textbf{Hedgehog Lab}, Core Collaborator}{\url{https://github.com/lidangzzz/hedgehog-lab}}
+\en{Scientific Computing Environment Running in Browsers}
+\zh{完全在浏览器中运行的科学计算环境}
 \begin{itemize}
-      \item \en{Implemented fault-tolerant Raft algorithm and K-V store based on that.}
-            \zh{理解了 Raft 算法的原理，实现了容错的 Raft 算法，并在其基础上实现了 K-V 存取}
-\end{itemize}
-
-\section{\en{Personal Experience}\zh{个人经历}}
-\en{\datedsubsection{\textbf{Cambridge Academic Development Seminar}, U.K.}{07/2018 -- 08/2018}}
-\zh{\datedsubsection{\textbf{英国剑桥大学人工智能暑期交流项目}}{2018/07 -- 2018/08}}
-\en{\role{Machine Learning}{Summer Program}}
-\zh{\role{学生}{暑期交流}}
-\begin{itemize}
-      \item \en{Learned machine learning algorithms.}
-            \zh{学习了经典机器学习算法}
-      \item \en{Collaborated with others researching in machine learning applications and concerns.}
-            \zh{在小组中担任领导角色，负责了小组展示的选题与组织}
+      \item \en{Supports most common matrix operations, accelerated by GPU using WebGL.}
+            \zh{支持大部分矩阵操作，并基于 WebGL 实现计算加速。}
+      \item \en{Built-in TeX support, data visualization and symbolic computation.}
+            \zh{内建 TeX 公式支持、数据可视化及符号计算。}
+      \item \en{Received over 1,200 stars on GitHub.}
+            \zh{在 GitHub 上收到超过 1,200 个 star。}
 \end{itemize}
 
 \section{\en{Skills}\zh{技能}}
@@ -91,48 +101,44 @@ MIT 6.824 Labs
       \item \en{\textbf{Programming Languages}:
                   not limited to any specific language,
                   and experienced in Rust/C/C++,
-                  comfortable with Python/C\#/Java/TypeScript (in random order).}
+                  comfortable with Python/Scala/TypeScript (in random order).}
             \zh{\textbf{编程语言}:
-                  熟悉各种编程语言，尤其熟悉 Rust/C/C++ 等，
-                  了解 Python/C\#/Java/TypeScript 等（不分先后）}
+                  不局限于特定编程语言，且尤其熟悉 Rust/C/C++ 等，
+                  了解 Python/Scala/TypeScript 等（不分先后）。}
 
       \item \en{\textbf{System}:
                   familiar with operating system concepts and design,
                   have experience in optimizing performance on kernel level using tools
                   like \texttt{strace} and \texttt{blktrace}.}
             \zh{\textbf{系统}:
-                  熟悉各种操作系统内核的概念与设计，熟悉各种内核性能调优工具，例如 \texttt{strace} 和 \texttt{blktrace}}
+                  熟悉各种操作系统内核的概念与设计，熟悉各种内核性能调优工具，例如 \texttt{strace} 和 \texttt{blktrace}。}
 
       \item \en{\textbf{Distributed Systems}:
                   taken course MIT 6.824,
                   understand consensus algorithms like Raft and ZooKeeper,
                   have experience in distributed system development.}
             \zh{\textbf{分布式系统}:
-                  熟悉 ZooKeeper 与 Raft 算法，有分布式系统开发经验}
+                  熟悉 ZooKeeper 与 Raft 算法，有分布式系统开发经验。}
 
       \item \en{\textbf{Machine Learning}:
                   familiar with general knowledge of machine learning.}
             \zh{\textbf{机器学习}:
-                  熟悉经典机器学习算法}
+                  熟悉经典机器学习算法。}
 
       \item \en{\textbf{Developing Tools}:
                   experienced in Linux-based programming,
                   have experience with team tools like Jira, Git, etc.}
             \zh{\textbf{开发工具}:
-                  十分熟悉 Linux，有 Jira、Git 等团队合作工具的经验}
+                  十分熟悉 Linux，有 Jira、Git 等团队合作工具的经验。}
 \end{itemize}
 
 \section{\en{Miscellaneous}\zh{其他}}
-\begin{itemize}[parsep=0.25ex]
+\begin{itemize}
       \item \en{Interests: Distributed Systems and storage, databases and cloud applications.}
-            \zh{兴趣：分布式系统、存储、数据库、云计算应用等}
+            \zh{兴趣：分布式系统、存储、数据库、云计算应用等。}
       \item \en{Open-source Contributions: contributed to \texttt{@rust-analyzer, @rust-osdev, @jupyter, @pingcap}, etc.}
-            \zh{开源贡献: 为 \texttt{@rust-analyzer, @rust-osdev, @jupyter, @pingcap} 等组织贡献过代码}
-      \item \en{Selected Courses: OS (91), Network (96), Database (92), Algorithm (93).}
-            \zh{主修课程：操作系统（91）、计算机网络（96）、数据库系统原理（92）、算法设计与分析（93）}
-      \item \en{Language Level: English GRE V158 + Q170 + AW3.5.}
-            \zh{语言水平：英语 GRE V158 + Q170 + AW3.5}
-      \item \textit{Meritorious Winner}, Mathematical Contest In Modeling 2019
+            \zh{开源贡献: 为 \texttt{@rust-analyzer, @rust-osdev, @jupyter, @pingcap} 等组织贡献过代码。}
+      \item \textit{Meritorious Winner} (Top 8\%), Mathematical Contest In Modeling 2019
 \end{itemize}
 
 \end{document}

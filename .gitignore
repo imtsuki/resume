@@ -13,6 +13,7 @@
 *.out
 *.fdb_latexmk
 *.fls
+__latexindent_temp.tex
 
 resume-zh.tex
 

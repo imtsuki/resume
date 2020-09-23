@@ -105,6 +105,6 @@
 }
 
 \newcommand{\role}[2]{
-  {\par (#1) ~ #2 \par}
+  {\par (#1) \textit{#2} \par}
 }
 

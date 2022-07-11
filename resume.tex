@@ -13,35 +13,75 @@
 \name{\en{Jianxin Qiu}\zh{邱建鑫}}
 \basicInfo{
       \email{jianxin.qiu@outlook.com} \textperiodcentered\
-      \github[imtsuki]{https://github.com/imtsuki}
+      \github[imtsuki]{https://github.com/imtsuki} \textperiodcentered\
+      \linkedin[jxqiu]{https://www.linkedin.com/in/jxqiu/}
 }
 
 \section{\en{Education}\zh{教育经历}}
-\en{\datedsubsection{\textbf{University of Toronto}, Master of Engineering}{01/2022 -- Present}}
+\en{\datedsubsection{\textbf{University of Toronto}, Master of Engineering}{2022 -- 2023 (Expected)}}
 \zh{\datedsubsection{\textbf{多伦多大学}, 电子与计算机工程硕士}{2022/01 -- 至今}}
 \begin{itemize}
-      \item \en{Major: Electrical and Computer Engineering}
+      \item \en{Major: Computer Engineering, \textit{Department of Electrical and Computer Engineering}}
             \zh{电子与计算机工程硕士}
 \end{itemize}
 
-\en{\datedsubsection{\textbf{Beijing University of Posts and Telecommunications}, Bachelor's Degree}{09/2017 -- 06/2021}}
-\zh{\datedsubsection{\textbf{北京邮电大学}, 本科}{2017/09 -- 2021/06}}
+\en{\datedsubsection{\textbf{Beijing University of Posts and Telecommunications}, Bachelor's Degree}{2017 -- 2021}}
+\zh{\datedsubsection{\textbf{北京邮电大学}, 本科}{2017 -- 2021}}
 \begin{itemize}
-      \item \en{Major: Data Science and Big Data Technology, \textit{The Honors Class, School of Computer Science}}
-            \zh{数据科学与大数据技术（计算机学院实验班）}
-      \item \en{GPA: 90.66/100 (Ranked 1 out of 63), Key Courses: OS (91), Compiler (95), Network (96), Database (92)}
-            \zh{GPA: 90.66/100（排名 1/63）, 主修课程：操作系统 (91)、编译原理 (95)、计算机网络 (96)、数据库系统原理 (92)}
-      \item TOEFL: 109 (30/R, 28/L, 23/S, 28/W), GRE: 328 (158/V, 170/Q, 3.5/AW)
+      \item \en{Major: Data Science and Big Data Technology, \textit{School of Computer Science}, GPA: 90.66/100}
+            \zh{数据科学与大数据技术（计算机学院实验班），GPA: 90.66/100}
+\end{itemize}
+
+\section{\en{Skills}\zh{技能}}
+\begin{itemize}[parsep=0.25ex]
+      \item \en{\textbf{Programming Languages}:
+                  not limited to any specific language,
+                  and experienced in Rust/C/C++,
+                  comfortable with Python/TypeScript/Java/Assembly (in random order).}
+            \zh{\textbf{编程语言}:
+                  不局限于特定编程语言，且尤其熟悉 Rust/C/C++ 等，
+                  了解 Python/TypeScript/Java/Assembly 等（不分先后）。}
+
+      \item \en{\textbf{System}:
+                  familiar with operating system concepts and design,
+                  have experience in optimizing performance at kernel level.}
+            \zh{\textbf{系统}:
+                  熟悉各种操作系统内核的概念与设计。}
+
+      \item \en{\textbf{Distributed Systems}:
+                  taken courses MIT 6.824 and ECE1724,
+                  understand consensus algorithms like Raft,
+                  have experience in distributed system development.}
+            \zh{\textbf{分布式系统}:
+                  熟悉 Raft 等算法，有分布式系统开发经验。}
+
+      \item \en{\textbf{Developing Tools}:
+                  experienced in Linux-based programming,
+                  have experience with team tools like Jira, Git, etc.}
+            \zh{\textbf{开发工具}:
+                  十分熟悉 Linux，有 Jira、Git 等团队合作工具的经验。}
+      \item \en{\textbf{Open-source Contributions}:
+                  contributed to \texttt{@rust-lang, @rust-osdev, @jupyter, @pingcap}, etc.}
+            \zh{\textbf{开源贡献}:
+                  为 \texttt{@rust-lang, @rust-osdev, @jupyter, @pingcap} 等组织贡献过代码。}
 \end{itemize}
 
 \section{\en{Work Experience}\zh{工作经历}}
-\en{\datedsubsection{\textbf{\href{https://www.bytedance.com/}{ByteDance Inc.}}, Beijing, China}{06/2021 -- 10/2021}}
+\en{\datedsubsection{\textbf{\href{https://www.bytedance.com/}{ByteDance}}, Beijing, China}{06/2021 -- 10/2021}}
 \zh{\datedsubsection{\textbf{\href{https://www.bytedance.com/}{字节跳动}}}{2021/06 -- 2021/10}}
 \en{\role{Lark Messenger Infrastructure}{Rust Engineer Intern}}
 \zh{\role{飞书基础架构}{Rust 研发实习}}
 \begin{itemize}
-      \item \en{TBD}
-            \zh{TBD}
+      \item \en{Worked with the infrastructure team to develop the cross-platform Rust client backend of Lark Messenger.}
+            \zh{合作开发飞书客户端的跨平台 Rust 框架。}
+      \item \en{Responsible for the calendar component, developed and landed new features such as a new “create, edit and subscribe to calendars” experience.}
+            \zh{负责日历组件，开发并上线新特性，如“创建、编辑和订阅日历”体验优化等。}
+      \item \en{Optimized the size of compiled binary by identifying code bloat at assembly level, like extracting logic from macros and refactoring functions where the impact of static polymorphism is significant, with an overall reduction of \textasciitilde 1MB.}
+            \zh{优化了编译二进制的大小。通过在汇编级别识别代码臃肿，如从宏中提取逻辑和重构受静态派发影响较大的函数，总体上将包体积减少了约 1MB。}
+      \item \en{Designed and implemented a new lock-free task queue for asynchronous task execution using channels and const generics, that supports arbitrary async executor, \texttt{Future} payload and priority scheduling, replacing the old thread-based implementation.}
+            \zh{设计并实现了一个新的无锁任务队列用于异步执行任务。其利用了 channel 和常量泛型（const generics），支持任意的异步执行器（executor）、 \texttt{Future} 载荷和优先级调度，取代了旧的基于线程的实现。}
+      \item \en{Refactored the internal SQL binding codegen tool to support typechecking e.g. \texttt{Nullable -> Option<T>} by parsing the schema definition into actual abstract syntax trees (ASTs).}
+            \zh{重构了内部 SQL 绑定代码的生成工具。通过将定义解析为实际的抽象语法树（AST）来支持类型检查，例如 \texttt{Nullable -> Option<T>}。}
 \end{itemize}
 
 \en{\datedsubsection{\textbf{\href{https://www.alibabacloud.com/}{Alibaba Cloud}}, Hangzhou, China}{07/2020 -- 08/2020}}
@@ -49,7 +89,7 @@
 \en{\role{OLAP Database Group}{Database Engineer Intern}}
 \zh{\role{OLAP 产品部}{研发实习}}
 \begin{itemize}
-      \item \en{Developed Flink connector for ClickHouse, using optimizations like parallel direct shard writing, that outperforms the default JDBC connector by 100\% in most common scenarios.}
+      \item \en{Independently developed Flink connector for ClickHouse, using optimizations like parallel direct shard writing, that outperforms the default JDBC connector by 100\% in most common scenarios.}
             \zh{为 ClickHouse 开发了 Flink connector，应用了直写 local 表等优化，在大部分场景下相较默认 JDBC connector 提升写入性能约 100\%。}
 \end{itemize}
 
@@ -60,14 +100,13 @@
 \begin{itemize}
       \item \en{Improved the long task execution module, like backup storage parallelization, QoS and task status management.}
             \zh{改进了 ZBS 的长任务执行模块（Task Center），如支持备份存储过程批并行化、QoS 限速及任务的状态控制等。}
-      \item \en{Implemented Hadoop-like command line tools for the NFS interface of the storage service.}
+      \item \en{Implemented Hadoop-like command-line tools for the NFS interface of the storage service.}
             \zh{为存储服务的 NFS 接口实现了一整套类似于 Hadoop HDFS 的命令行工具。}
 \end{itemize}
 
-\section{\en{Research \& Academic Experience}\zh{研究经历}}
 \en{\datedsubsection{\textbf{Network and Big Data Technology R\&D Center}, Tsinghua University}{02/2020 -- 07/2020}}
 \zh{\datedsubsection{\textbf{清华大学网络大数据技术研究中心}}{2020/02 -- 2020/07}}
-\en{\role{RISC-V TEE}{Research Intern}}
+\en{\role{RISC-V Trusted Execution Environment (TEE)}{Research Intern}}
 \zh{\role{RISC-V 可信执行环境}{科研实习}}
 \begin{itemize}
       \item \en{Implemented committed instruction flow collection based on RocketChip running on FireSim using Chisel.}
@@ -76,83 +115,27 @@
             \zh{分析了 Tensorflow 与 Tensorflow Lite 框架内存分配的特征。}
 \end{itemize}
 
-\en{\datedsubsection{\textbf{Cambridge Academic Development Seminar}, U.K.}{07/2018 -- 08/2018}}
-\zh{\datedsubsection{\textbf{英国剑桥大学人工智能暑期交流项目}}{2018/07 -- 2018/08}}
-\en{\role{Machine Learning}{Summer Exchange Program}}
-\zh{\role{学生}{暑期交流}}
-\begin{itemize}
-      \item \en{Collaborated with others researching in machine learning applications and concerns.}
-            \zh{在小组中担任领导角色，研究机器学习应用问题，负责了小组展示的选题与组织。}
-\end{itemize}
-
 \section{\en{Portfolios}\zh{个人项目}}
-\datedsubsection{\textbf{xv7}}{\url{https://github.com/imtsuki/xv7}}
-\en{Operating System implemented in Rust}
-\zh{使用 Rust 编写的操作系统}
-\begin{itemize}
-      \item \en{Implemented UEFI Bootloader, memory management and process management.}
-            \zh{实现了 UEFI Bootloader 、内存管理与进程管理。}
-      \item \en{Achieved memory safety in kernel with the help of Rust's safe abstractions and lifetimes.}
-            \zh{借助 Rust 的抽象能力与生命周期概念实现内核中的内存安全。}
-      \item \en{Made contributions to \texttt{\href{https://github.com/rust-osdev}{rust-osdev}}, an organization aiming at providing tools useful for OS development in Rust.}
-            \zh{为 Rust 操作系统开源组织 \texttt{\href{https://github.com/rust-osdev}{rust-osdev}} 贡献代码。}
-\end{itemize}
-
-\datedsubsection{\textbf{Hedgehog Lab}, Core Collaborator}{\url{https://github.com/Hedgehog-Computing/hedgehog-lab}}
-\en{Scientific Computing Environment Running in Browsers}
-\zh{完全在浏览器中运行的科学计算环境}
-\begin{itemize}
-      \item \en{Supports most common matrix operations, accelerated by GPU using WebGL.}
-            \zh{支持大部分矩阵操作，并基于 WebGL 实现计算加速。}
-      \item \en{Built-in TeX support, data visualization and symbolic computation.}
-            \zh{内建 TeX 公式支持、数据可视化及符号计算。}
-      \item \en{Received over 1,600 stars on GitHub.}
-            \zh{在 GitHub 上收到超过 1,600 个 star。}
-\end{itemize}
-
-\section{\en{Skills}\zh{技能}}
 \begin{itemize}[parsep=0.25ex]
-      \item \en{\textbf{Programming Languages}:
-                  not limited to any specific language,
-                  and experienced in Rust/C/C++,
-                  comfortable with Python/Scala/TypeScript/Assembly (in random order).}
-            \zh{\textbf{编程语言}:
-                  不局限于特定编程语言，且尤其熟悉 Rust/C/C++ 等，
-                  了解 Python/Scala/TypeScript 等（不分先后）。}
-
-      \item \en{\textbf{System}:
-                  familiar with operating system concepts and design,
-                  have experience in optimizing performance on kernel level using tools
-                  like \texttt{strace} and \texttt{blktrace}.}
-            \zh{\textbf{系统}:
-                  熟悉各种操作系统内核的概念与设计。}
-
-      \item \en{\textbf{Distributed Systems}:
-                  taken course MIT 6.824,
-                  understand consensus algorithms like Raft and ZooKeeper,
-                  have experience in distributed system development.}
-            \zh{\textbf{分布式系统}:
-                  熟悉 Raft 等算法，有分布式系统开发经验。}
-
-      \item \en{\textbf{Machine Learning}:
-                  familiar with general knowledge of machine learning.}
-            \zh{\textbf{机器学习}:
-                  熟悉经典机器学习算法。}
-
-      \item \en{\textbf{Developing Tools}:
-                  experienced in Linux-based programming,
-                  have experience with team tools like Jira, Git, etc.}
-            \zh{\textbf{开发工具}:
-                  十分熟悉 Linux，有 Jira、Git 等团队合作工具的经验。}
-\end{itemize}
-
-\section{\en{Miscellaneous}\zh{其他}}
-\begin{itemize}
-      \item \en{Interests: computer systems and architecture, parallel computing, databases and cloud applications.}
-            \zh{兴趣：分布式系统、存储、数据库、云计算应用等。}
-      \item \en{Open-source Contributions: contributed to \texttt{@rust-analyzer, @rust-osdev, @jupyter, @pingcap}, etc.}
-            \zh{开源贡献: 为 \texttt{@rust-analyzer, @rust-osdev, @jupyter, @pingcap} 等组织贡献过代码。}
-      \item \textit{Meritorious Winner} (Top 8\%), Mathematical Contest In Modeling 2019
+      \item \textbf{\href{https://github.com/imtsuki/xv7}{xv7}}:
+            \en{An operating system implemented in Rust.
+                Implemented UEFI Bootloader, memory management and process management,
+                and achieved memory safety in kernel with the help of Rust's safe abstractions and lifetimes.
+                Made contributions to \texttt{\href{https://github.com/rust-osdev}{rust-osdev}}, an organization aiming at providing tools useful for OS development in Rust.}
+            \zh{使用 Rust 编写的操作系统。
+                实现了 UEFI Bootloader、内存管理与进程管理，
+                并借助 Rust 的抽象能力与生命周期概念实现内核中的内存安全。
+                为 Rust 操作系统开源组织 \texttt{\href{https://github.com/rust-osdev}{rust-osdev}} 贡献代码。}
+      \item \textbf{\href{https://github.com/Hedgehog-Computing/hedgehog-lab}{Hedgehog Lab}}:
+            \en{An in-browser, jupyter-like JavaScript execution environment that received over 2,200 stars on GitHub. }
+            \zh{\textbf{Hedgehog Lab}: 完全在浏览器中运行的科学计算环境，在 GitHub 上收到超过 2,200 个 star。}
+      \item \textbf{\href{https://github.com/imtsuki/Reddens}{Reddens}}:
+            \en{A rasterization renderer implemented in Metal and Swift.}
+            \zh{一个使用 Metal 和 Swift 实现的光栅化渲染器。}
+      \item \textbf{\href{https://github.com/rust-lang/rust-analyzer}{Rust Analyzer Contributor}}:
+            \en{The offical Rust language server implementation for IDEs.
+                Added support for IntelliJ-like inlay parameter name hints for call expressions.}
+            \zh{Rust 的官方语言服务器（language server）。为其实现了类似 IntelliJ 的参数名提示。}
 \end{itemize}
 
 \end{document}

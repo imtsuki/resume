@@ -20,11 +20,11 @@
 \urlstyle{same}
 
 \RequirePackage[
-	a4paper,
-	left=0.60in,
-	right=0.60in,
-	top=0.60in,
-	bottom=0.60in,
+	letterpaper,
+	left=0.50in,
+	right=0.50in,
+	top=0.50in,
+	bottom=0.50in,
 	nohead
 ]{geometry}
 
@@ -105,6 +105,6 @@
 }
 
 \newcommand{\role}[2]{
-  {\par (#1) \textit{#2} \par}
+  {\par (\textbf{#1}) {#2} \par}
 }
 

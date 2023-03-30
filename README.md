@@ -1,17 +1,16 @@
-# My résumé
+# My Resume
 
 ![Alibaba](https://img.shields.io/badge/Alibaba-passing-green.svg) ![LICENSE](https://img.shields.io/github/license/imtsuki/resume)
 
-This is my résumé based on [this template](https://github.com/billryan/resume).
+This is my resume based on [this template](https://github.com/skyzh/typst-cv-template).
 
 ## Build
 
 ```bash
-make all
+make
 ```
 
-## Download/下载
+## Download
 
 - [English version (pdf)](./resume.pdf)
-- [中文版 (pdf)](./resume-zh.pdf)
-- [LaTeX Source](./resume.tex)
+- [Typst Source](./resume.typ)

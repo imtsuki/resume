@@ -1,31 +1,4 @@
-
-## LaTeX ##
-
-*.bbl
-*.blg
-*.log
-*.gz
-*.bak
-*.html
-*.aux
-*.ilg
-*.ind
-*.out
-*.fdb_latexmk
-*.fls
-__latexindent_temp.tex
-
-resume-zh.tex
-
-## Editors ##
-
-.idea/
-.vs/
-.vscode/
-
-## Emacs/Vim ##
-
-*~
+template.pdf
 
 ## macOS ##
 .DS_Store

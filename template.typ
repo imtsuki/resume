@@ -11,10 +11,16 @@
 
   set par(leading: 0.58em)
 
+  let links = (
+    email: link("mailto:" + author.email)[#author.email],
+    github: link(author.github)[#author.github.trim("https://", at: start)],
+    website: link(author.website)[#author.website.trim("https://", at: start)]
+  )
+
   [
     = #author.name
 
-    #link("mailto:" + author.email)[#author.email] | #link(author.github)[#author.github.trim("https://", at: start)] | #link(author.website)[#author.website.trim("https://", at: start)]
+    #links.email | #links.github | #links.website
   ]
 
   set par(justify: true)

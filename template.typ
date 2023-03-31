@@ -1,6 +1,13 @@
-#let project(author: (), body) = {
+#let project(author: (), updated: "", body) = {
   set document(title: "Curriculum Vitae", author: author.name)
-  set page(margin: (x: 0.9cm, y: 1.3cm))
+  set page(
+    margin: (x: 0.9cm, y: 1.3cm),
+    footer: if updated != "" [
+        #set align(right)
+        #set text(fill: gray)
+        Last updated: #updated
+    ]
+  )
   set text(font: "Linux Libertine", lang: "en")
 
   show par: set block(above: 0.75em, below: 0.75em)

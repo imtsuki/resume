@@ -8,7 +8,8 @@
 )
 
 #show: project.with(
-  author: author
+  author: author,
+  updated: "Mar 30, 2023"
 )
 
 == Education
@@ -56,8 +57,6 @@ Software Engineer Intern (C++) #h(1fr) Beijing, China
 
 - Enhanced the long task execution module of the distributed block storage system, implementing features like storage backup parallelization, QoS bandwidth limiting, and task status management.
 - Developed Hadoop-like command-line tools for the NFS interface of the storage service.
-
-
 
 == Personal Projects
 

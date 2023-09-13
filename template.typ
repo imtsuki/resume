@@ -1,11 +1,11 @@
-#let project(author: (), updated: "", body) = {
+#let project(author: (), body) = {
   set document(title: "Curriculum Vitae", author: author.name)
   set page(
     margin: (x: 0.9cm, y: 1.3cm),
-    footer: if updated != "" [
+    footer: [
         #set align(right)
         #set text(fill: gray)
-        Last updated: #updated
+        Last updated: #datetime.today().display("[month repr:short] [day], [year]")
     ]
   )
   set text(font: "Linux Libertine", lang: "en")

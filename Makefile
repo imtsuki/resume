@@ -1,4 +1,4 @@
 all: en
 
 en: resume.typ
-	typst resume.typ
+	typst compile resume.typ

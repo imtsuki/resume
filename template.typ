@@ -1,6 +1,7 @@
 #let project(author: (), body) = {
   set document(title: "Curriculum Vitae", author: author.name)
   set page(
+    paper: "a4",
     margin: (x: 0.9cm, y: 1.3cm),
     footer: [
         #set align(right)
@@ -8,9 +9,9 @@
         Last updated: #datetime.today().display("[month repr:short] [day], [year]")
     ]
   )
-  set text(font: "Linux Libertine", lang: "en")
+  set text(font: "Libertinus Serif", lang: "en")
 
-  show par: set block(above: 0.75em, below: 0.75em)
+  set par(spacing: 0.75em)
 
   show heading: set text(font: "Linux Biolinum")
 

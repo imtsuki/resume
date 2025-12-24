@@ -1,10 +1,10 @@
 #import "template.typ": *
 
 #let author = (
-    name: "Jianxin Qiu",
-    email: "jianxin.qiu@outlook.com",
-    github: "https://github.com/imtsuki",
-    website: "https://linkedin.com/in/jxqiu"
+  name: "Jianxin Qiu",
+  email: "jianxin.qiu@outlook.com",
+  github: "https://github.com/imtsuki",
+  website: "https://linkedin.com/in/jxqiu",
 )
 
 #show: project.with(
@@ -27,19 +27,18 @@ Bachelor's Degree of Engineering, Computer Science, GPA: 90.66/100 #h(1fr) Beiji
 
 _Software Engineer_ #h(1fr) Singapore
 
-#underline[AI Infrastructure] #h(1fr) 2025 - Present
+#underline[AI Infrastructure] #h(1fr)
 
-- Designed and launched the company-wide *Model Context Protocol (MCP)* gateway from scratch, enabling seamless integration of AI tools across the organization. Designed a flexible platform where teams can register REST/gRPC APIs as MCP tools via UI configuration, host third-party servers, or implement custom handlers programmatically, abstracting away protocol complexity, authentication, and observability concerns. Scaled the platform to host *6,000+ MCP servers* and process *2B+ requests* daily, serving as the foundational infrastructure for AI tool integration across all engineering teams.
-- Engineered the *AI Sandbox platform* on the serverless infrastructure (ByteFaaS) to enable on-demand, ephemeral environments with configurable lifetimes and per-instance routing. Developed container images with remote command execution, port proxying, VNC, and browser automation capabilities, now serving 10,000+ cores daily.
-- Integrated *AI agent frameworks* (LangGraph, ADK, Eino, etc.) into ByteFaaS runtime and created a one-click setup process for AI agent projects with automated repo scaffolding, CI/CD pipelines, and runtime provisioning.
+- Designed, developed, and launched the company-wide *Model Context Protocol (MCP)* gateway from scratch, enabling seamless integration of AI tools across the organization. Designed a flexible platform where teams can register REST/gRPC APIs as MCP tools, host third-party servers, or implement custom handlers programmatically, abstracting away protocol complexity, authentication, and observability concerns. Scaled the platform to host *6,000+ MCP servers* and process *2B+ requests* daily, serving as the foundational infrastructure for AI tool integration across all engineering teams.
+- Engineered the *AI Sandbox platform* on the serverless infrastructure to enable on-demand, ephemeral environments for AI agents with configurable lifetimes and per-instance routing. Developed runtime daemon with remote command execution & process management, port forwarding, and browser automation capabilities, now serving 40,000+ cores daily.
 
-#underline[Serverless Platform (ByteFaaS)] #h(1fr) 2024
+#underline[Serverless Platform]
 
-- Unified on-prem and cloud control planes into a single Go codebase; migrated metadata for 4,000+ functions, reducing maintenance overhead and accelerating new feature delivery.
-- Designed and delivered CronJob-on-FaaS, enabling existing batch workloads to run serverlessly with custom images, sidecar metrics/log collectors, and DC-aware scheduling.
-- Moved the build process from self-managed build clusters to the centralized ByteBuild platform, reducing complex function build times by 50% and eliminating cluster failures.
+- Unified on-prem and cloud control planes into a single codebase; migrated metadata for 4,000+ functions, reducing maintenance overhead and accelerating new feature delivery.
+- Designed and delivered CronJob-on-Serverless, enabling existing batch workloads to run serverlessly with custom images, sidecar metrics/log collectors, and DC-aware scheduling.
+- Moved the build process from self-managed build clusters to the centralized build platform, reducing complex function build times by 50% and eliminating cluster failures.
 
-#underline[Cloud Native Infrastructure] #h(1fr) 2023
+#underline[Cloud Native Infrastructure]
 
 - Built a metrics proxy layer exposing unified OpenTSDB APIs over Prometheus and internal observability systems to standardize metrics ingestion across environments.
 - Developed a service-mesh-based traffic switcher with dependency tracking and automated cut-over policies, enabling zero-downtime migration of 5,000+ on-prem microservices to cloud infrastructure.
@@ -48,8 +47,9 @@ _Software Engineer_ #h(1fr) Singapore
 
 _Software Engineer Intern (Rust)_ #h(1fr) Beijing, China
 
-- Contributed to Lark Messenger's core Rust components, introducing new features to the calendar module.
-- Improved modularity and binary footprint through assembly-level profiling and code refactoring, reducing binary size and improving startup latency. Adopted Rust async/await patterns across shared modules to enhance reliability and maintainability.
+- Worked on Lark Messenger's cross-platform Rust library powering iOS, Android, desktop, and web clients, introduced new features to the calendar component.
+- Improved modularity and binary footprint through assembly-level profiling and code refactoring, reducing binary size and improving startup latency. Adopted Rust `async`/`await` patterns across shared modules to enhance reliability and maintainability.
+
 
 *Alibaba Cloud*, ClickHouse Database Team #h(1fr) Jul -- Aug 2020
 
@@ -66,4 +66,5 @@ _Software Engineer Intern (C++)_ #h(1fr) Beijing, China
 
 == Skills
 
-- C, C++, Rust, Go, Python, Java, Cloud Infrastructure, Serverless, Service Mesh, Model Context Protocol (MCP), etc.
+- C, C++, Rust, Go, Python, Compiler, Linux Kernel, Serverless, Model Context Protocol (MCP), etc.
+- Open-source contributions: contributed to `@rust-lang`, `@rust-analyzer`, `@rust-osdev`, etc.

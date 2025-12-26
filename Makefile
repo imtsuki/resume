@@ -1,4 +1,5 @@
-all: en
+.PHONY: all
+all: resume.pdf
 
-en: resume.typ
+resume.pdf: resume.typ template.typ
 	typst compile resume.typ

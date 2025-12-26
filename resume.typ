@@ -7,64 +7,34 @@
   website: "https://linkedin.com/in/jxqiu",
 )
 
-#show: project.with(
-  author: author,
-)
+#show: resume.with(author: author)
 
-== Education
+#section("Education")[
+  #education[University of Toronto][Master of Engineering in Computer Engineering][Toronto, Canada][2022 -- 2023]
 
-*University of Toronto* #h(1fr) 2022 -- 2023
+  #education[Beijing University of Posts and Telecommunications][Bachelor of Engineering in Computer Science][Beijing, China][2017 -- 2021]
+]
 
-Master's Degree of Engineering, Computer Engineering, GPA: 3.90/4.00 #h(1fr) Toronto, Canada
+#section("Employment History")[
+  #experience[TikTok][Software Engineer][2023 -- Present][
+    Launched the Model Context Protocol (MCP) gateway, where teams can register REST/gRPC APIs as MCP tools, host third-party servers, or implement custom handlers programmatically, abstracting away protocol complexity, authentication, and observability concerns. Scaled the platform to host 9,000+ MCP servers and process 2B+ requests daily, serving as the foundational infrastructure for AI tool integration across all engineering teams.
 
-*Beijing University of Posts and Telecommunications* #h(1fr) 2017 -- 2021
+    Engineered the AI Sandbox platform on the serverless infrastructure to enable on-demand, ephemeral environments for AI agents with configurable lifetimes and per-instance routing. Built a runtime daemon handling remote command execution, process lifecycle management, port forwarding, and browser automation. Scaled to serve 40,000+ cores daily.
 
-Bachelor's Degree of Engineering, Computer Science, GPA: 90.66/100 #h(1fr) Beijing, China
+    Maintained the serverless platform, including its control plane, build system, and data plane components. Unified on-prem and cloud control planes into a single codebase and migrated metadata for 4,000+ functions, reducing maintenance overhead and accelerating new feature delivery. Engineered CronJob-on-Serverless to enable existing batch workloads to run serverlessly, solving challenges around custom container images, distributed scheduling across multiple data centers, and seamless integration with existing Kubernetes workloads.
+  ]
+]
 
-== Work Experience
+#section("Past Internships")[
+  #internship[ByteDance][Worked on Lark Messenger's cross-platform Rust library. Introduced new product features to the calendar module, improved codebase modularity and binary footprint through systematic assembly-level profiling and code refactoring.]
 
-*TikTok (ByteDance)*, Technical Infrastructure #h(1fr) Aug 2023 -- Present
+  #internship[Alibaba Cloud][Worked on the ClickHouse database team. Integrated ClickHouse and Apache Flink by developing a high-throughput database connector, achieved over 5x higher throughput over the default JDBC connector.]
 
-_Software Engineer_ #h(1fr) Singapore
-
-#underline[AI Infrastructure] #h(1fr)
-
-- Designed, developed, and launched the company-wide *Model Context Protocol (MCP)* gateway from scratch, enabling seamless integration of AI tools across the organization. Designed a flexible platform where teams can register REST/gRPC APIs as MCP tools, host third-party servers, or implement custom handlers programmatically, abstracting away protocol complexity, authentication, and observability concerns. Scaled the platform to host *6,000+ MCP servers* and process *2B+ requests* daily, serving as the foundational infrastructure for AI tool integration across all engineering teams.
-- Engineered the *AI Sandbox platform* on the serverless infrastructure to enable on-demand, ephemeral environments for AI agents with configurable lifetimes and per-instance routing. Developed runtime daemon with remote command execution & process management, port forwarding, and browser automation capabilities, now serving 40,000+ cores daily.
-
-#underline[Serverless Platform]
-
-- Unified on-prem and cloud control planes into a single codebase; migrated metadata for 4,000+ functions, reducing maintenance overhead and accelerating new feature delivery.
-- Designed and delivered CronJob-on-Serverless, enabling existing batch workloads to run serverlessly with custom images, sidecar metrics/log collectors, and DC-aware scheduling.
-- Moved the build process from self-managed build clusters to the centralized build platform, reducing complex function build times by 50% and eliminating cluster failures.
-
-#underline[Cloud Native Infrastructure]
-
-- Built a metrics proxy layer exposing unified OpenTSDB APIs over Prometheus and internal observability systems to standardize metrics ingestion across environments.
-- Developed a service-mesh-based traffic switcher with dependency tracking and automated cut-over policies, enabling zero-downtime migration of 5,000+ on-prem microservices to cloud infrastructure.
-
-*ByteDance*, Lark Messenger #h(1fr) Jun -- Oct 2021
-
-_Software Engineer Intern (Rust)_ #h(1fr) Beijing, China
-
-- Worked on Lark Messenger's cross-platform Rust library powering iOS, Android, desktop, and web clients, introduced new features to the calendar component.
-- Improved modularity and binary footprint through assembly-level profiling and code refactoring, reducing binary size and improving startup latency. Adopted Rust `async`/`await` patterns across shared modules to enhance reliability and maintainability.
+  #internship[SmartX][Worked on the distributed block storage team. Enhanced the long task execution module, implemented features like storage backup parallelization, QoS bandwidth limiting, and task status management.]
+]
 
 
-*Alibaba Cloud*, ClickHouse Database Team #h(1fr) Jul -- Aug 2020
-
-_Software Engineer Intern (Java)_ #h(1fr) Hangzhou, China
-
-- Integrated ClickHouse and Apache Flink by developing a high-throughput database connector, employing optimizations like parallel direct shard writing, achieved over 5x higher throughput over the default JDBC connector.
-
-*SmartX Inc.*, ZBS Storage Team #h(1fr) Sep 2019 -- Jan 2020
-
-_Software Engineer Intern (C++)_ #h(1fr) Beijing, China
-
-- Enhanced the long task execution module of the distributed block storage system, implementing features like storage backup parallelization, QoS bandwidth limiting, and task status management.
-- Developed Hadoop-like command-line tools for the NFS interface of the storage service.
-
-== Skills
-
-- C, C++, Rust, Go, Python, Compiler, Linux Kernel, Serverless, Model Context Protocol (MCP), etc.
-- Open-source contributions: contributed to `@rust-lang`, `@rust-analyzer`, `@rust-osdev`, etc.
+#section("Skills")[
+  - C, C++, Rust, Go, Python, Compiler, Linux Kernel, Serverless, Model Context Protocol (MCP), etc.
+  - Open-source contributions: contributed to `@rust-lang`, `@rust-analyzer`, `@rust-osdev`, etc.
+]

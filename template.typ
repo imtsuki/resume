@@ -3,6 +3,7 @@
     email: link("mailto:" + author.email)[#author.email],
     github: link(author.github)[#author.github.trim("https://", at: start)],
     website: link(author.website)[#author.website.trim("https://", at: start)],
+    repo: link(author.repo)[#raw(author.repo.trim("https://github.com/"))],
   )
 }
 
@@ -11,9 +12,6 @@
   set page(
     paper: "a4",
     margin: (x: 2cm, y: 2cm),
-    footer: align(right)[
-      Updated on #datetime.today().display("[month repr:short] [day], [year]")
-    ],
   )
   let size = 10pt
   set text(font: "PT Serif", size: size)
@@ -22,6 +20,8 @@
   set par(justify: true)
 
   let links = get-links(author)
+
+  set page(footer: align(right)[#links.repo])
 
   align(center)[
     #title(author.name)
@@ -45,6 +45,8 @@
   v(1.5em)
 }
 
+#let inline-image(src) = box(image(src, height: 1em), baseline: 15%)
+
 #let education(school, degree, location, time) = {
   show heading.where(level: 2): it => box(it)
   [
@@ -53,9 +55,9 @@
   ]
 }
 
-#let experience(company, title, time, description) = {
+#let experience(company, title, time, description, logo: none) = {
   [
-    == #title, #company
+    == #if logo != none [#inline-image(logo)] #title, #company
     #time
 
     #description

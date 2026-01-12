@@ -5,6 +5,7 @@
   email: "jianxin.qiu@outlook.com",
   github: "https://github.com/imtsuki",
   website: "https://linkedin.com/in/jxqiu",
+  repo: "https://github.com/imtsuki/resume",
 )
 
 #show: resume.with(author: author)
@@ -16,7 +17,9 @@
 ]
 
 #section("Employment History")[
-  #experience[TikTok][Software Engineer][2023 -- Present][
+  #experience(
+    logo: "logos/tiktok.jpg",
+  )[TikTok][Software Engineer][2023 -- 2026][
     Launched the Model Context Protocol (MCP) gateway, where teams can register REST/gRPC APIs as MCP tools, host third-party servers, or implement custom handlers programmatically, abstracting away protocol complexity, authentication, and observability concerns. Scaled the platform to host 9,000+ MCP servers and process 2B+ requests daily, serving as the foundational infrastructure for AI tool integration across all engineering teams.
 
     Engineered the AI Sandbox platform on the serverless infrastructure to enable on-demand, ephemeral environments for AI agents with configurable lifetimes and per-instance routing. Built a runtime daemon handling remote command execution, process lifecycle management, port forwarding, and browser automation. Scaled to serve 40,000+ cores daily.

@@ -17,6 +17,12 @@
 ]
 
 #section("Employment History")[
+  #experience(logo: "logos/moonshot.png")[#link(
+    "https://moonshot.ai",
+  )[Moonshot AI]][Member of Technical Staff][2026 -- Present][
+    Building the agentic future at Kimi.
+  ]
+
   #experience(
     logo: "logos/tiktok.jpg",
   )[TikTok][Software Engineer][2023 -- 2026][

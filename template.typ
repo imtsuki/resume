@@ -45,7 +45,7 @@
   v(1.5em)
 }
 
-#let inline-image(src) = box(image(src, height: 1em), baseline: 15%)
+#let inline-image(src) = box(image(src, height: 0.8em), baseline: 10%)
 
 #let education(school, degree, location, time) = {
   show heading.where(level: 2): it => box(it)

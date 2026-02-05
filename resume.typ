@@ -10,12 +10,6 @@
 
 #show: resume.with(author: author)
 
-#section("Education")[
-  #education[University of Toronto][Master of Engineering in Computer Engineering][Toronto, Canada][2022 -- 2023]
-
-  #education[Beijing University of Posts and Telecommunications][Bachelor of Engineering in Computer Science][Beijing, China][2017 -- 2021]
-]
-
 #section("Employment History")[
   #experience(logo: "logos/moonshot.png")[#link(
     "https://moonshot.ai",
@@ -32,6 +26,12 @@
 
     Maintained the serverless platform, including its control plane, build system, and data plane components. Unified on-prem and cloud control planes into a single codebase and migrated metadata for 4,000+ functions, reducing maintenance overhead and accelerating new feature delivery. Engineered CronJob-on-Serverless to enable existing batch workloads to run serverlessly, solving challenges around custom container images, distributed scheduling across multiple data centers, and seamless integration with existing Kubernetes workloads.
   ]
+]
+
+#section("Education")[
+  #education[University of Toronto][Master of Engineering in Computer Engineering][Toronto, Canada][2022 -- 2023]
+
+  #education[Beijing University of Posts and Telecommunications][Bachelor of Engineering in Computer Science][Beijing, China][2017 -- 2021]
 ]
 
 #section("Past Internships")[
